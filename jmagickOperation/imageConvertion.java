@@ -9,11 +9,10 @@ public abstract class imageConvertion {
 	
 	/**
 	 * 
-	 * @param pass		ƒtƒ@ƒCƒ‹‚Ìƒtƒ‹ƒpƒX
-	 * @param extension	Šg’£q‚Ì•¶š—ñ
-	 * @return			Š®—¹‚µ‚½‚©‚Ç‚¤‚©
+	 * @param pass		ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ•ãƒ«ãƒ‘ã‚¹
+	 * @param extension	æ‹¡å¼µå­ã®æ–‡å­—åˆ—
+	 * @return			å®Œäº†ã—ãŸã‹ã©ã†ã‹
 	 */
 	public abstract boolean convertion(String pass, String extension);
-	
 	
 }
