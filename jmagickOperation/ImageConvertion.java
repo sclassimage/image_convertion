@@ -5,7 +5,7 @@ package jmagickOperation;
  * @author 183108
  *
  */
-public abstract class imageConvertion {
+public abstract class ImageConvertion {
 	
 	/**
 	 * 
