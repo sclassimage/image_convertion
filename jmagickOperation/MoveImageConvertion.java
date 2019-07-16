@@ -17,9 +17,9 @@ public class MoveImageConvertion extends ImageConvertion{
 		String resultPass = link(passArray);
 		File resultImage = new File(resultPass);
 		try {
-			MagickImage mi = new MagickImage(new ImageInfo(pass));
+			MagickImage mi = new MagickImage(new ImageInfo(image.getPath()));
 	        MagickImage mo = mi.scaleImage((int) mi.getXResolution(),(int) mi.getYResolution());
-	        mo.setFileName(resultPass);
+	        mo.setFileName(resultImage.getName());
 	        mo.writeImage(new ImageInfo());
 		}catch(MagickException e) {
 			return false;
