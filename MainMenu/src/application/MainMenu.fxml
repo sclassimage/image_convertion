@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <Pane prefHeight="189.0" prefWidth="446.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="FileChoose" layoutX="260.0" layoutY="59.0" mnemonicParsing="false" onAction="#FileChoose_onClick" prefHeight="25.0" prefWidth="81.0" text="参照" />
+            <Button fx:id="FileConversion" layoutX="295.0" layoutY="102.0" mnemonicParsing="false" onAction="#FileConversion_onClick" prefHeight="25.0" prefWidth="114.0" text="変換" />
+            <ComboBox fx:id="FileExtension" layoutX="352.0" layoutY="59.0" onAction="#Extention_OnClick" prefHeight="25.0" prefWidth="82.0" promptText="拡張子" />
+            <TextField fx:id="FileName" layoutX="13.0" layoutY="59.0" onAction="#FileChooseName" prefHeight="25.0" prefWidth="235.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
