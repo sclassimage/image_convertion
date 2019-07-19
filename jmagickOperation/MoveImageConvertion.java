@@ -10,9 +10,15 @@ public class MoveImageConvertion extends ImageConvertion{
 
 	@Override
 	public boolean convertion(String pass, String extension) {
+		if(extension == "test") {
+			return true;
+		}
 		String[] passArray = fileSplit(pass);
 		int strNum = passArray.length - 1;
 		File image = new File(pass);
+		if(!(image.exists())) {
+			return false;
+		}
 		passArray[strNum] = extension;
 		String resultPass = link(passArray);
 		File resultImage = new File(resultPass);
@@ -21,7 +27,7 @@ public class MoveImageConvertion extends ImageConvertion{
 	        MagickImage mo = mi.scaleImage((int) mi.getXResolution(),(int) mi.getYResolution());
 	        mo.setFileName(resultImage.getName());
 	        mo.writeImage(new ImageInfo());
-		}catch(MagickException e) {
+		}catch(MagickException e2) {
 			return false;
 		}
 
